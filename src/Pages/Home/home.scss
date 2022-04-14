@@ -1,0 +1,33 @@
+.home{
+    display:flex;
+    .home-container{
+        
+        flex: 6;
+        .widgets{
+            padding: 20px;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            column-gap: 30px;
+        }
+        .chart-progress{
+            padding: 5px 20px;
+            display: grid;
+            grid-template-columns: 5fr 7fr;
+            column-gap: 30px;
+        }
+        .table-container{
+            margin:  20px;
+            border: 1px solid rgb(234, 221, 221);
+            border-radius:10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                 color: rgb(94, 85, 85);
+            .title{
+                padding: 10px;
+                font-size: 20px;
+                font-weight: 700;
+            }
+        }
+      
+       
+    }
+}

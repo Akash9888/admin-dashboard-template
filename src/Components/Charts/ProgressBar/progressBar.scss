@@ -1,0 +1,65 @@
+.progressBar-container{
+    border: 1px solid rgb(234, 221, 221);
+    border-radius:10px;
+   
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+color: rgb(94, 85, 85);
+    .top{
+        padding: 10px;
+        display: flex;
+        justify-content:space-between;
+        align-items:center;
+    }
+    .bottom{
+    
+        padding: 20px;
+        display: flex;
+        flex-direction:column;
+        align-items:center;
+        // justify-content:center;
+        text-align:center;
+        gap: 15px;
+        .progress{
+         
+            width: 130px;
+            height:130px;
+        }
+        .title{
+            font-size: 20px;
+            font-weight: 500;
+        }
+        .amount{
+            font-size:25px;
+            font-weight: 700;
+            color:black;
+        }
+        .desc{
+            font-weight: 500;
+        }
+        .achivement{
+       
+            display: grid;
+             grid-template-columns: repeat(3,auto);
+             grid-gap: 40px;
+             padding-top: 5px;
+            
+             .achiv-title{
+                font-size:18px;
+                font-weight: 700;
+             }
+             .percentage{
+           
+                display: flex;
+                align-items:center;
+                font-size: 18px;
+                padding-top:5px;
+                &.positive{
+                    color: green;
+                }
+                &.negative{
+                    color: red;
+                }
+            }
+        }
+    }
+}
